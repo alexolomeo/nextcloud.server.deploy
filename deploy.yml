@@ -1,8 +1,8 @@
 ---
+
 - name: nextcloud
   hosts: nextcloudserver
   become: true
-  #become_method: sudo
 
   vars:
     nextcloud_version: 26.0.3
@@ -10,17 +10,17 @@
 
     nextcloud_os_user: nextclouduser
 
-    mariadb_root_password: p0w3rchin4Main
+    mariadb_root_password: XxXxXMain
 
     nextcloud_db_name: nextcloud
     nextcloud_db_user: nextcloud
-    nextcloud_db_password: p0w3rchin4user
+    nextcloud_db_password: XxXxXuser
     
     nextcloud_admin_user: admin
-    nextcloud_admin_password: p0w3rchin4Admin
+    nextcloud_admin_password: XxXxXAdmin
 
     install_media: false
 
 
   roles:
-    - failoverbo.nextcloud
+    - nextcloud.server
