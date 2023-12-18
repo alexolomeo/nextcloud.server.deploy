@@ -2,6 +2,8 @@
   
 echo "Init creating ssh key to verify conectivity...."
 
+sudo dnf update -y
+
 sudo dnf install -y ansible git
 
 ssh-keygen -q -b 2048 -t rsa -N "" -C "creating SSH" -f KEY-UBUNTU
